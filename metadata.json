@@ -1,0 +1,7 @@
+{
+  "name": "CSV Geocoder and Map Visualizer",
+  "description": "Upload a CSV file with location data, select the location column, and use Gemini with Google Maps Grounding to geocode and visualize the locations on an interactive map.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

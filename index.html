@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Geocoder and Map Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <style>
+      /* --- Leaflet Theming --- */
+
+      /* Light Theme Popup Styles */
+      .leaflet-popup-content-wrapper,
+      .leaflet-popup-tip {
+        background-color: white;
+        box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+        color: #1f2937; /* Tailwind gray-800 */
+      }
+      .leaflet-popup-content strong {
+        color: #4b5563 !important; /* Tailwind gray-600 */
+      }
+      .leaflet-popup-content span {
+        color: #1f2937 !important; /* Tailwind gray-800 */
+      }
+      .leaflet-popup-content .border-gray-200 {
+        border-color: #e5e7eb !important; /* Tailwind gray-200 */
+      }
+      .leaflet-popup-close-button {
+        color: #374151 !important; /* Tailwind gray-700 */
+      }
+      .leaflet-popup-close-button:hover {
+        background-color: #f3f4f6; /* Tailwind gray-100 */
+      }
+      .leaflet-control-attribution a {
+        color: #3b82f6; /* Tailwind blue-500 */
+      }
+
+      /* Dark Theme Popup Overrides */
+      html.dark .leaflet-popup-content-wrapper,
+      html.dark .leaflet-popup-tip {
+        background-color: #1f2937; /* Tailwind gray-800 */
+      }
+      html.dark .leaflet-popup-content strong {
+        color: #d1d5db !important; /* Tailwind gray-300 */
+      }
+      html.dark .leaflet-popup-content span {
+        color: #f9fafb !important; /* Tailwind gray-50 */
+      }
+      html.dark .leaflet-popup-content .border-gray-200 {
+        border-color: #4b5563 !important; /* Tailwind gray-600 */
+      }
+      html.dark .leaflet-popup-close-button {
+        color: #e5e7eb !important; /* Tailwind gray-200 */
+      }
+      html.dark .leaflet-popup-close-button:hover {
+        background-color: #374151; /* Tailwind gray-700 */
+      }
+      html.dark .leaflet-control-attribution a {
+        color: #9ca3af; /* Tailwind gray-400 */
+      }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
